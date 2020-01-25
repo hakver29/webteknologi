@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <title>BESTILLING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+
+    <header id = "header"></header>
+
+    <div id="wrapper">
+        <div id = "velgPizza">
+            <p id = "velgPizza_overskrift">VELG PIZZA</p>
+        
+            <div id = "pizza1" class = "pizzaDiv" >
+                <img src = "img/pizza2.jpg" alt = "Pizza" class = "litenPizza" >
+                <span class = "pizza" >Pizza 1</span>
+            </div>
+            <div id = "pizza2" class = "pizzaDiv">
+                <img src = "img/pizza2.jpg" alt = "Pizza" class = "litenPizza">
+                <p class = "pizza" >Pizza 2</p>
+            </div>
+            <div id = "pizza3" class = "pizzaDiv">
+                <img src = "img/pizza2.jpg" alt = "Pizza" class = "litenPizza">
+                <p  class = "pizza" > Pizza 3</p>
+            </div>
+            <div id = "pizza4" class = "pizzaDiv">
+                <img src = "img/pizza2.jpg" alt = "Pizza" class = "litenPizza">
+                <p class = "pizza" > Pizza 4</p>
+            </div>
+        </div>
+        <div id = "pizzaForhandsvisning">
+            <p id = "forhandsvisning_overskrift">PIZZA FORHÅNDSVISNING</p>
+            <img id = "imgForhandsvisning" src = ""><br> <!--Får verdier gjennom Javascript-->
+            <button id = "btnLeggTilPizza" type = "submit" class = "button">Legg pizza i handlekurv</button>
+            <p id = "pHandlekurv">Du har valgt dette:</p>
+            <div id = "liste" ><ul id = "txtHandlekurv"></ul></div>
+        </div>
+        <div id = "sausBetaling">
+           
+            <p>Velg saus</p>
+            <hr><br>
+            <label>Rømmedressing: <input type="number" name="saus" id = "romme" min = "0" max = "10" class = "antallDressing"></label><br><br>
+            <label>Hvitløksdressing: <input type="number" name="saus" id = "hvitlok" class = "antallDressing" min = "0" max = "10"> </label><br>
+            <br><br>
+            <p>Velg betalingsmåte</p>
+            <hr><br>
+            <label for = "radVipps"><input type="radio" name="betaling" id = "radVipps" value="vipps">VIPPS</label><br><br>
+            <label for = "radKort"><input type="radio" name="betaling" id = "radKort" value="kort" checked> KORT</label><br><br>
+
+            <button type = "submit" id = "btnBetaling" class = "button">Bestill</button>
+            
+        </div>
+    </div>
+    <div id = "bestillingsbekreftelse">
+        <div id = "infoBestilling"></div>
+        <span id = "bestilling"></span>
+        <div id = "tidIgjen"></div>
+    </div>
+
+    <footer id="footer"></footer>
+
+    <script src="js/navigasjon2.js"></script>
+    <script src = "js/takeaway.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <title>KONTAKT OSS</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+    <body>
+
+        <header id="header"></header>
+        <div id = "kontakt">
+        <div class="header1" id="kontakt_oss1">
+            <br>
+            <h1>KONTAKT OSS</h1>
+        </div>
+
+        <div class="form">
+            <form onsubmit="event.preventDefault(); changeVisibility()">
+                <label for="inpNavn"> NAVN:
+                    <input type="text" id="inpNavn" name="name" maxlength="50" size="22" autofocus required>
+                </label>
+                <br><br>
+                <label for="inpEpost">E-POST:
+                    <input type="email" id="inpEpost" name="epost" maxlength="50" required>
+                </label>
+                <br><br>
+                <label for="inpMelding">MELDING:
+                    <textarea id="inpMelding" rows="5" cols="32" required style="resize: none;"></textarea>
+                </label>
+                <br><br>
+                <label for="button">
+                    <button type="submit" id="button">SEND</button>
+                </label>
+                <br><br>
+            </form>
+        </div>
+        <div class='box' id='txtSvar'> </div>
+        <br>
+        </div>
+
+        <footer id="footer"></footer>
+
+        <script src="js/contactscript.js">
+        </script>
+        <script src="js/navigasjon2.js"></script>
+        
+    </body>
+</html>

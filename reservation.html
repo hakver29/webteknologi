@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="utf-8" />
+        <title>RESERVASJON</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+  <body>
+    <header id="header" ></header>
+      <div class="header1" id="reservation1">
+        <br>
+        <h1>BESTILL BORD</h1>
+      </div>
+
+      <div class="form">
+        <form onsubmit="event.preventDefault(); changeVisibility()">
+            <label for="inpNavn"> NAVN:
+                <input type="text" id="inpNavn" name="name" maxlength="50" size="22" autofocus required>
+            </label>
+            <br><br>
+            <label for="inpEpost">E-POST:
+                <input type="email" id="inpEpost" name="epost" maxlength="50" size="20" required>
+            </label>
+            <br><br>
+            <label for="inpDato"> DATO:
+                <input id="inpDato" type="date" style="width:140px;" required>
+            </label>
+            <br><br>
+            <label for="inpAntall_personer">ANTALL PERSONER:
+                <input id="inpAntall_personer" type="number" min="1" max="15" required>
+            </label>
+            <br><br>
+            <label for="inpMelding">MELDING:
+                <textarea id="inpMelding" rows="5" cols="32" required style="resize: none;"></textarea>
+            </label>
+            <br><br>
+            <label for="button">
+                <button type="submit" id="button">SEND</button>
+            </label>
+            <br><br>
+        </form>
+      </div>
+      <div class='box' id='txtSvar'></div>
+      <br>
+    <footer id="footer"></footer>
+
+    <script src="js/reservationscript.js"></script>
+    <script src="js/navigasjon2.js"></script>
+
+    </body>
+  </html>
